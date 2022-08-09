@@ -1,0 +1,17 @@
+# Delivery_for_Resturant
+Android Application to make deleivery orders from resturant
+![Screenshot_20220806_105719](https://user-images.githubusercontent.com/47037203/183598656-8bc4ef06-96f0-4d91-a9ff-88dc7e17252a.png)
+![Screenshot_20220806_105743](https://user-images.githubusercontent.com/47037203/183598663-c76f64e5-df75-4c57-a6d1-1c0c716c5b54.png)
+![Screenshot_20220806_154324](https://user-images.githubusercontent.com/47037203/183598698-6068ac85-9d48-41bd-9e38-e865aec052b6.png)
+![Screenshot_20220806_154405](https://user-images.githubusercontent.com/47037203/183598701-bbe1f494-36bc-4cd9-8a18-5926795f9fd4.png)
+![Screenshot_20220806_154447](https://user-images.githubusercontent.com/47037203/183598714-9066a323-7c29-4c4e-a86c-bc5152546381.png)
+![Screenshot_20220806_154509](https://user-images.githubusercontent.com/47037203/183598716-07fb0ffe-27d6-42c2-a45d-42ab31436989.png)
+![Screenshot_20220806_154553](https://user-images.githubusercontent.com/47037203/183598725-a1e69b88-ad11-40e8-9331-f1530b0e5aad.png)
+![Screenshot_20220807_101757](https://user-images.githubusercontent.com/47037203/183598758-007d46c1-5022-4716-9d72-00323c04897a.png)
+![Screenshot_20220807_101947](https://user-images.githubusercontent.com/47037203/183598765-47531f31-7290-4db5-ae62-03e4bab05801.png)
+![Screenshot_20220809_102344](https://user-images.githubusercontent.com/47037203/183598777-6c607989-1862-469a-b800-c2b7095514c7.png)
+![Screenshot_20220809_102417](https://user-images.githubusercontent.com/47037203/183598793-a8219d4c-daae-4b3c-b16b-7f1c076f1863.png)
+![Screenshot_20220809_102805](https://user-images.githubusercontent.com/47037203/183598801-95cd3db6-7db1-441d-9f3f-fe12bc9c44b1.png)
+![Screenshot_20220809_103134](https://user-images.githubusercontent.com/47037203/183598812-a2e65ce6-c8bd-4604-94e4-1f95fb8784f7.png)
+![Screenshot_20220809_103730](https://user-images.githubusercontent.com/47037203/183598816-b6a7ce6f-e34c-4c05-9b3e-58af04ef7b0a.png)
+![Screenshot_20220809_103834](https://user-images.githubusercontent.com/47037203/183598823-b8b0317f-5933-4e56-8832-cdb79ea9ec11.png)
