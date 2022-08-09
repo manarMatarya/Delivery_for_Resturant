@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/food"
+        android:icon="@drawable/food"
+        android:title="Food"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/reservation"
+        android:icon="@drawable/table"
+        android:title="Courses"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/adminmore"
+        android:icon="@drawable/navmore"
+        android:title="More"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/basic">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerVertical="true"
+            app:civ_border_width="1dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/mm"
+            android:scaleType="centerCrop"
+            android:id="@+id/adminlimg"/>
+        <TextView
+            android:id="@+id/adminlname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fhxmchc"
+            android:textColor="@color/darkgreen"
+            android:textStyle="bold"
+            android:layout_toEndOf="@+id/adminlimg"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/adminlimg" />
+
+        <TextView
+            android:id="@+id/adminldesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminlname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/adminlimg"
+            android:layout_toRightOf="@+id/adminlimg"
+            android:text="fhxmcbb bbbfxhgf hjhbhv hvhvj jbjb xmgjx fjgf xjgn xjgzx jgxjxj xfgn zxngx ngxnh c"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/adminlprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminldesc"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/adminlimg"
+            android:layout_toRightOf="@+id/adminlimg"
+            android:text="150$"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/adminlbtnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminldesc"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/adminlimg"
+            android:layout_toRightOf="@id/adminlprice"
+            android:background="@drawable/mainbutton"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Edit This"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.about">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/varbg" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_left_arrow" />
+
+    <TextView
+        android:id="@+id/ltitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Table Reservation"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ltitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/date" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" Set Date "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:id="@+id/EditDateP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:text="##/##/####"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/time" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text=" Set Time "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/EditTimeP"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="160dp"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="## : ##"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:src="@drawable/date" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Persons Number "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:solidColor="#686868"
+
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reservationBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/mainbutton"
+        android:elevation="20dp"
+        android:text="Reservation"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!--    <TextView-->
+
+    <!--        android:id="@+id/textView43"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="@dimen/_30sdp"-->
+    <!--        android:fontFamily="@font/dinnextarabicmedium"-->
+    <!--        android:text="Set Date"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="@dimen/_15sdp"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView41"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView41" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/EditTimeP"-->
+    <!--        android:layout_width="@dimen/_130sdp"-->
+    <!--        android:layout_height="@dimen/_30sdp"-->
+    <!--        android:drawableLeft="@drawable/ic_baseline_keyboard_arrow_down_24"-->
+    <!--        android:fontFamily="@font/dinnextarabicmedium"-->
+    <!--        android:gravity="center_horizontal|center_vertical"-->
+    <!--        android:text="## : ##   ##"-->
+    <!--        android:textSize="@dimen/_15sdp"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView43"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/EditDateP"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView43" />-->
+
+
+    <!--    <TextView-->
+
+    <!--        android:id="@+id/textView31"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:text="Person Numbers"-->
+    <!--        -->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/textView43"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView43" />-->
+
+    <!--    <NumberPicker-->
+    <!--        android:id="@+id/number"-->
+    <!--        android:layout_width="90dp"-->
+    <!--        android:layout_height="88dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView31"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/EditTimeP"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView31" />-->
+
+
+</RelativeLayout>

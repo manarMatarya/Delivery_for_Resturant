@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AdminMainScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/admin_main_container"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/admin_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navbg"
+        android:elevation="100dp"
+        android:focusableInTouchMode="false"
+        android:outlineAmbientShadowColor="#000"
+        android:outlineSpotShadowColor="#000"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/icon_navigation_tint"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/admin_navigation"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</RelativeLayout>

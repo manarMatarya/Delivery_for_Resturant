@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:id="@+id/constrant"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person Name"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="90dp"
+                    android:id="@+id/adminPersonName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manar Matarya"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#000" />
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="0598576933"
+                    android:layout_marginLeft="100dp"
+                    android:id="@+id/adminPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_marginTop="10dp"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:id="@+id/textview3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Person Number"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:textColor="#000" />
+
+               <TextView
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:text="9"
+                   android:layout_marginLeft="100dp"
+                   android:id="@+id/adminPersonNumber"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   />
+               <TextView
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:text="Persons"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="5dp"
+                   />
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:id="@+id/admindate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/admin_date"
+                    android:drawablePadding="5dp"
+                    android:hint="17-16-2007"
+                    android:layout_marginRight="10dp"
+                   />
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/admintime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:drawableStart="@drawable/admin_time"
+                    android:drawablePadding="5dp"
+                    android:hint="12:00"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>

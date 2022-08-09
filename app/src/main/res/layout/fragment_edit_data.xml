@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.EditData">
+
+    <LinearLayout
+        android:isScrollContainer="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/editimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_baseline_add_a_photo_24"
+            android:onClick="uploadImage" />
+
+
+        <TextView
+            android:id="@+id/vbn"
+            android:text="Categories"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioGroup
+            android:id="@+id/editcategory"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioButton
+                android:id="@+id/editsweet"
+                android:text="Sweets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/editjuices"
+                android:text="Juices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/editsalad"
+                android:text="Salad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/editsanswishes"
+                android:text="Sandwiches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/editmeals"
+                android:text="Meals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/editapatizer"
+                android:text="Appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_baseline_fastfood_24"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/editdescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_baseline_description_24"
+            android:hint="Description" />
+
+        <EditText
+            android:id="@+id/editprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:hint="Price"
+            android:drawableStart="@drawable/ic_baseline_monetization_on_24"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editcalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="20dp"
+            android:drawableStart="@drawable/ic_baseline_category_24"
+            android:hint="calories" />
+
+        <CheckBox
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textColorHighlight="@color/darkgreen"
+            android:textColorHint="@color/darkgreen"
+            android:shadowColor="@color/darkgreen"
+            android:textColorLink="@color/darkgreen"
+            android:outlineAmbientShadowColor="@color/darkgreen"
+            android:outlineSpotShadowColor="@color/darkgreen"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Is Vegetarian"
+            android:id="@+id/editvegetarian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/editbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cartLin"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/mainbutton"
+            android:elevation="20dp"
+            android:text="Update Food"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
