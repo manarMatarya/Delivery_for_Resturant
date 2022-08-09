@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.menu.R;
 import com.example.menu.admin.AdminMainScreen;
+import com.example.menu.models.User;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -29,7 +30,7 @@ import java.util.Map;
 
 public class Refister_form extends AppCompatActivity {
 
-    EditText regname,regemail,regaddress,regpassword;
+    EditText regname,regemail,regaddress,regpassword, regphone;
     Button regbtn;
     private FirebaseAuth mAuth;
     FirebaseFirestore fStore;
@@ -45,6 +46,7 @@ public class Refister_form extends AppCompatActivity {
         regname = findViewById(R.id.regname);
         regemail = findViewById(R.id.regemail);
         regaddress = findViewById(R.id.regaddress);
+        regphone = findViewById(R.id.regphone);
         regpassword = findViewById(R.id.regpassword);
         regbtn = findViewById(R.id.regbtn);
         // Initialize Firebase Auth
@@ -75,6 +77,7 @@ public class Refister_form extends AppCompatActivity {
         final String userPassword = regpassword.getText().toString().trim();
         final String userName = regname.getText().toString().trim();
         final String userAddress = regaddress.getText().toString().trim();
+        final String userPhone = regphone.getText().toString().trim();
 
         if(TextUtils.isEmpty(userEmail)){
             regemail.setError("email is required");
@@ -102,10 +105,11 @@ public class Refister_form extends AppCompatActivity {
                     userId=mAuth.getCurrentUser().getUid();
 
                     DocumentReference documentReference = fStore.collection("users").document(userId);
-                    Map<String , Object> user = new HashMap<>();
-                    user.put("username" , userName);
-                    user.put("address" , userAddress);
-                    user.put("email" , userEmail);
+                    User user = new User();
+                    user.setEmail(userEmail);
+                    user.setUsername(userName);
+                    user.setAddress(userAddress);
+                    user.setPhone(userPhone);
                     documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {

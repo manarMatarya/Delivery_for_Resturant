@@ -44,13 +44,13 @@
         android:id="@+id/regname"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/view5"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/bg_edittext"
         android:hint="User name"
-        android:paddingLeft="18dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_below="@+id/view5"/>
+        android:paddingLeft="18dp" />
 
     <EditText
         android:id="@+id/regemail"
@@ -68,13 +68,24 @@
         android:id="@+id/regaddress"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:layout_below="@+id/regemail"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="14dp"
+        android:layout_marginRight="30dp"
         android:background="@drawable/bg_edittext"
         android:hint="Address"
+        android:paddingLeft="18dp" />
+    <EditText
+        android:id="@+id/regphone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/regaddress"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
         android:layout_marginRight="30dp"
-        android:paddingLeft="18dp"
-        android:layout_below="@+id/regemail"/>
+        android:background="@drawable/bg_edittext"
+        android:hint="Phone"
+        android:paddingLeft="18dp" />
 
     <EditText
         android:id="@+id/regpassword"
@@ -86,7 +97,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:paddingLeft="18dp"
-        android:layout_below="@+id/regaddress"/>
+        android:layout_below="@+id/regphone"/>
 
     <Button
         android:id="@+id/regbtn"
