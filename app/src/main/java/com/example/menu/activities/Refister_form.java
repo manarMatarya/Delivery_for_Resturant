@@ -63,7 +63,7 @@ public class Refister_form extends AppCompatActivity {
         sharedPref = context.getSharedPreferences(
                 "file", Context.MODE_PRIVATE);
         if(mAuth.getCurrentUser()!=null){
-            if(sharedPref.getString("email", "") == "mataryamanar@gmail.com"){
+            if(sharedPref.getString("email", "").equals("rokkayya2000@gmail.com")){
                 startActivity(new Intent(getApplicationContext(), AdminMainScreen.class));
             }else{
                 startActivity(new Intent(getApplicationContext(), MainScreen.class));

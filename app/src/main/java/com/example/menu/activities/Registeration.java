@@ -46,7 +46,7 @@ public class Registeration extends AppCompatActivity {
         super.onStart();
 
         if(fAuth.getCurrentUser()!=null){
-            if(sharedPref.getString("email", "").equals("mataryamanar@gmail.com")){
+            if(sharedPref.getString("email", "").equals("rokkayya2000@gmail.com")){
                 Intent intent = new Intent(this, AdminMainScreen.class);
                 startActivity(intent);
             }else{
@@ -85,7 +85,7 @@ public class Registeration extends AppCompatActivity {
                     SharedPreferences.Editor editor = sharedPref.edit();
                     editor.putString("email", userEmail);
                     editor.apply();
-                    if(userEmail.equals("mataryamanar@gmail.com")){
+                    if(userEmail.equals("rokkayya2000@gmail.com")){
                         Intent intent = new Intent(getApplicationContext(), AdminMainScreen.class);
                         startActivity(intent);
                     }else{
